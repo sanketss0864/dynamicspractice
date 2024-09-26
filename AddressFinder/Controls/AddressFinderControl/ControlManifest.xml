@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="AddressFinder" constructor="AddressFinderControl" version="0.0.1" display-name-key="AddressFinderControl_Display_Key" description-key="AddressFinderControl_Desc_Key" control-type="standard" api-version="1.1.0">
+    <property name="address_line_1" display-name-key="address_line_1" description-key="address_line_1" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="address_line_2" display-name-key="address_line_2" description-key="address_line_2" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="city" display-name-key="city" description-key="city" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="suburb" display-name-key="suburb" description-key="suburb" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="postcode" display-name-key="postcode" description-key="postcode" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="afKey" display-name-key="Address Finder Key" description-key="Address Finder Key" of-type="SingleLine.Text" usage="input" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+    </resources>
+    <built-by name="pac" version="0.2.71"/>
+  </control>
+</manifest>

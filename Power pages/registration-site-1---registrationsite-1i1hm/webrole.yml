@@ -1,0 +1,16 @@
+- adx_anonymoususersrole: true
+  adx_authenticatedusersrole: false
+  adx_name: Anonymous Users
+  adx_webroleid: 0ac4f9b0-644a-ef11-acce-6045bda56ea9
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: true
+  adx_name: Authenticated Users
+  adx_webroleid: 1bf3fdb6-644a-ef11-acce-6045bda56ea9
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_name: Administrators
+  adx_webroleid: 59c3f9b0-644a-ef11-acce-6045bda56ea9
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_name: C1 ASP
+  adx_webroleid: f836f6bc-644a-ef11-acce-6045bda56ea9

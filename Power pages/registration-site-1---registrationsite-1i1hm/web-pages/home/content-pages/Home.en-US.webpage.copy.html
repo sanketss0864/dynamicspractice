@@ -1,0 +1,15 @@
+{% include 'Portal Web API Wrapper' %}<div class="row sectionBlockLayout" style="display: flex; flex-wrap: wrap; padding: 8px; margin: 0px;">
+  <div id="course-catalog" class="container">
+    
+      <div id="header" class="col-lg-12" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 300px; align-items: center;">
+        <h2>After school events</h2>
+        <p class="home-header-subtitle">Browse all the events for 2022-2023</p>
+      </div>
+
+    <div class="catalog-cards col-lg-12 columnBlockLayout nopadding" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 300px; margin-top: 0px; padding-right: 0 !important">
+      <div class="col-lg-12">
+        {% include 'Dropdown Filters' %}
+      </div>{% include 'Course Catalog' %}
+    </div>
+  </div>
+</div>

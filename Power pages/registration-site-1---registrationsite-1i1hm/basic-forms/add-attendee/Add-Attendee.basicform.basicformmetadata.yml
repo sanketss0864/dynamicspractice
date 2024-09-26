@@ -1,0 +1,25 @@
+- adx_adddescription: false
+  adx_attributelogicalname: firstname
+  adx_descriptionposition: 100000000
+  adx_entityform: 95c3f9b0-644a-ef11-acce-6045bda56ea9
+  adx_entityformmetadataid: 7bc4f9b0-644a-ef11-acce-6045bda56ea9
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: Add Attendee firstname
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: childrensnames
+  adx_controlstyle: 756150001
+  adx_descriptionposition: 100000000
+  adx_entityform: 95c3f9b0-644a-ef11-acce-6045bda56ea9
+  adx_entityformmetadataid: 9ec4f9b0-644a-ef11-acce-6045bda56ea9
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: Add Attendee childrensnames
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true

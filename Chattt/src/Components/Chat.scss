@@ -1,0 +1,219 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+
+
+
+
+
+.chat {
+  position: fixed;
+  right: 3rem;
+  bottom: 10rem;
+  display: none;
+
+  .chat-cont {
+   overflow: hidden;
+    box-shadow: 0px 0px 10px gainsboro;
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+    background-color: rgba(220, 220, 220, 0.183);
+    .chat-top {
+      font-size: 17px;
+      text-align: left;
+      padding: 8px 18px;
+      background-color: #08826d;
+      color: white;
+    }
+    .chat-body {
+      height: 210px;
+      overflow: auto;
+      padding: 15px 20px 20px;
+      position: relative;
+ scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+      .chat-query {
+        width: 60%;
+        height: 34px;
+        padding: 3px 0;
+
+        .chat-query-text {
+          background-color: #d3ffc8;
+          position: absolute;
+          right: 20px;
+          padding: 8px 10px;
+          border-radius: 10px 10px 0 8px;
+          animation: bounce-in-bottom .4s both;
+          text-wrap: pretty;
+        }
+
+        @keyframes bounce-in-bottom {
+          0% {
+           
+                    transform: translateY(20px);
+         
+                    animation-timing-function: ease-in;
+            opacity: 0;
+          }
+          38% {
+          
+                    transform: translateY(0);
+        
+                    animation-timing-function: ease-out;
+            opacity: 1;
+          }
+          55% {
+          
+                    transform: translateY(5px);
+           
+                    animation-timing-function: ease-in;
+          }
+          72% {
+          
+                    transform: translateY(0);
+       
+                    animation-timing-function: ease-out;
+          }
+          81% {
+           
+                    transform: translateY(2px);
+         
+                    animation-timing-function: ease-in;
+          }
+
+          100% {
+           
+                    transform: translateY(0);
+         
+                    animation-timing-function: ease-out;
+          }
+        }
+      }
+      .chat-response {
+        background-color: rgba(220, 220, 220, 0.183);
+        width: 60%;
+        border-radius: 10px 10px 8px 0px;
+        padding: 7px;
+        margin: 9px 0 4px;
+        animation: bounce-in-bottom .4s both;
+        .chat-text {
+          text-wrap: pretty;
+        
+        }
+
+        .chat-options {
+          margin: 10px 0 3px;
+
+          .chat-option {
+            background-color: white;
+            box-shadow: 0 0 3px rgba(220, 220, 220, 0.717);
+            width: 80%;
+            padding: 3px 8px;
+            font-size: 14px;
+            border-radius: 4px;
+            margin: 5px 0;
+          }
+        }
+      }
+      @keyframes bounce-in-bottom {
+        0% {
+         
+                  transform: translateY(20px);
+       
+                  animation-timing-function: ease-in;
+          opacity: 0;
+        }
+        38% {
+        
+                  transform: translateY(0);
+      
+                  animation-timing-function: ease-out;
+          opacity: 1;
+        }
+        55% {
+        
+                  transform: translateY(5px);
+         
+                  animation-timing-function: ease-in;
+        }
+        72% {
+        
+                  transform: translateY(0);
+     
+                  animation-timing-function: ease-out;
+        }
+        81% {
+         
+                  transform: translateY(2px);
+       
+                  animation-timing-function: ease-in;
+        }
+
+        100% {
+         
+                  transform: translateY(0);
+       
+                  animation-timing-function: ease-out;
+        }
+      }
+    }
+    .chat-input {
+      
+      display: flex;
+      width: 90%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 20px;
+      gap: 5px;
+      input {
+        border: none;
+        flex: auto;
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid gainsboro;
+        padding: 5px 10px;
+        color: #000000;
+      }
+      input:focus-visible{
+  outline: #0000003d 1px solid;
+      }
+      .send-btn {
+        background-color: #25d366;
+        padding: 9px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+
+        i.ti.ti-send {
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.chat-open-btn {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #25d366;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  i.ti.ti-brand-hipchat {
+  }
+}
+.active {
+  display: block;
+  scale: 1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function openform() {
+        var entityFormOptions = {};
+        entityFormOptions["entityName"] = "nw_backupstudent"; // Replace with your entity logical name
+        entityFormOptions["useQuickCreateForm"] = true; // Use the quick create form if available
+
+        var formParameters = {};
+
+        if (parent.Xrm && parent.Xrm.Navigation && typeof parent.Xrm.Navigation.openForm === 'function') {
+            parent.Xrm.Navigation.openForm(entityFormOptions, formParameters).then(
+                function (success) {
+                    console.log("Form opened successfully");
+                },
+                function (error) {
+                    console.error("Error opening form: ", error);
+                }
+            );
+        } else {
+            console.error("Xrm.Navigation.openForm is not available.");
+        }
+    }
+</script>
+<body>
+    <button type="button" onclick="openform()">Open Quick create form</button>
+</body>
+</html>

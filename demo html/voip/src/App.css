@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+ 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+ 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.display{
+  /* text-align: center; */
+  outline: none;
+  width: 100%;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin: 20PX 0;
+  overflow: hidden;
+
+}
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.App-link {
+  color: #61dafb;
+}
+ 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+/* .keypad {
+  background-color: white;
+  width: 320px;
+  padding: 20px;
+  margin: 30px auto;
+  height: 420px;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+.keypad button {
+  float: left;
+  padding: 10px 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  max-width: 100px;
+  background: #e1e1e1;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  border: navajowhite;
+  margin: 2px;
+  border-radius: 12px;
+}
+.keypad button:active { 
+  transform: scale(0.98); 
+  /* Scaling button to 0.98 to its original size */ 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.105); 
+  /* Lowering the shadow */ 
+} 
+button.call {
+  display: inline-block;
+  background-color: #66bb6a;
+  padding: 4px 30px;
+  margin: 10px;
+  color: white;
+  border-radius: 4px;
+  float: left;
+  cursor: pointer;
+  font-size: 20px;
+}
+button.erase {
+  display: inline-block;
+  background-color: #f56c6c;
+  padding: 4px 30px;
+  margin: 10px;
+  color: white;
+  border-radius: 4px;
+  float: left;
+  cursor: pointer;
+  font-size: 20px;
+}
+button.notebook {
+  width: 100%;
+  font-size: 18px;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.dialer{
+  width: 20rem;
+  margin: auto;
+}
+button{
+  border: none;
+}

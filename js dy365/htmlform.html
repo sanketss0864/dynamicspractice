@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+ <script>
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var data = {
+            "nw_name": name,
+        };
+
+        alert("Name: " + name);
+
+        // Get formContext from the global scope
+        var formContext = window.top.formContext;
+        if (formContext) {
+            alert("Form Context retrieved successfully");
+
+            // Set value to the Dynamics 365 form field
+            formContext.getAttribute("nw_name").setValue(name);
+
+            // Create a new record
+            parent.Xrm.WebApi.createRecord("nw_student", data).then(
+                function success(result) {
+                    console.log("Account created with ID: " + result.id);
+                    alert("Account created with ID: " + result.id);
+                },
+                function (error) {
+                    alert("Account not created: " + error.message);
+                    console.error("Error creating record: " + error.message);
+                }
+            );
+        } else {
+            alert("Form Context not available");
+        }
+    }
+</script>
+</head>
+<body>
+<div class="form-container">
+    <div>
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: My registrations
+  adx_openinnewwindow: false
+  adx_pageid: b67f01ab-644a-ef11-acce-6045bda56ea9
+  adx_publishingstateid: 46c4f9b0-644a-ef11-acce-6045bda56ea9
+  adx_robotsfollowlink: true
+  adx_weblinkid: 85c3f9b0-644a-ef11-acce-6045bda56ea9
+  adx_weblinksetid: ca7f01ab-644a-ef11-acce-6045bda56ea9
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Home
+  adx_openinnewwindow: false
+  adx_pageid: d57f01ab-644a-ef11-acce-6045bda56ea9
+  adx_publishingstateid: 46c4f9b0-644a-ef11-acce-6045bda56ea9
+  adx_robotsfollowlink: true
+  adx_weblinkid: f2c3f9b0-644a-ef11-acce-6045bda56ea9
+  adx_weblinksetid: ca7f01ab-644a-ef11-acce-6045bda56ea9

@@ -1,0 +1,5 @@
+# Exclude zip files
+*.zip
+
+# Exclude node_modules directory
+node_modules/

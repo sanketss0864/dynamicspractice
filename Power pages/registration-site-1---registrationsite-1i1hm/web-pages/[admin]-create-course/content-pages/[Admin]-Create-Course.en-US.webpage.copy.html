@@ -1,0 +1,40 @@
+{% include 'Portal Web API Wrapper' -%}
+{%- include 'Course Form Logic' %}
+<div class='row sectionBlockLayout' style='display: flex; flex-wrap: wrap; padding: 8px; margin: 0px; text-align: left; min-height: 100px;'>
+  <div class='container' style='display: flex; flex-wrap: wrap;'>
+    <div class='col-lg-12 columnBlockLayout course-form-header' style='flex-grow: 1; min-width: 300px; display: flex; flex-direction: column;'>
+      <div class='back-container'>
+        <a href='/admin-home'><img src='/back-arrow.svg' alt='back arrow' class='back-arrow' style='max-width: 100%;'>
+          Back to my Courses
+        </a>
+      </div>
+      <h2>Create new course</h2>
+      <h5>Course details</h5>
+    </div>
+  </div>
+</div>
+<div class='row sectionBlockLayout' style='display: flex; flex-wrap: wrap; margin: 0px; text-align: left; min-height: 374px; padding: 8px;'>
+  <div class='container course-form-container' style='display: flex; flex-wrap: wrap;'>
+    <div class='col-lg-12 columnBlockLayout' style='flex-grow: 1; display: flex; flex-direction: column; min-width: 300px; padding: 16px;'>{% entityform name: 'ASP Create Course' %}</div>
+  </div>
+</div>
+<div class='row sectionBlockLayout' style='display: flex; flex-wrap: wrap; margin: 0px; text-align: left; min-height: 374px; padding: 8px;'>
+  <div class='container btn-container' style='display: flex; flex-wrap: wrap;'>
+    <div class='col-lg-6 columnBlockLayout' style='flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;'><button id='cancelButton1' data-bs-toggle='modal' data-bs-target='#discardModal1' class='button1 btn-primary' style='margin-left: auto; margin-right: 0;'>Discard</button></div>
+    <button id='createButton1' class='button1 btn-primary' style='margin-right: 0; height: 37px; margin-top: 65px; width: 182px;'>{{ snippets.Create }}</button>
+  </div>
+</div>
+<!-- START MODAL -->
+<div id='discardModal1' tabindex='-1' role='dialog' aria-labelledby='discardModalLabel' aria-hidden='true' class='modal fade'>
+  <div role='document' class='modal-dialog modal-dialog-centered'>
+    <div class='modal-content' style='border-radius: 16px;'>
+      <div class='modal-header'>
+        <h5 class='modal-title'>Discard changes?</h5>
+        <button type='button' data-bs-dismiss='modal' aria-label='Close' class='close'><span aria-hidden='true'>×</span></button>
+      </div>
+      <div class='modal-body'>Would you like to discard any changes made?</div>
+      <div class='modal-footer'><button id='confirmDiscard1' type='button' class='btn btn-primary'>Discard</button></div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
